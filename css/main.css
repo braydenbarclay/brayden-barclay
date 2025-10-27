@@ -1,5 +1,6 @@
 /*this is wehre all of our global styles go*/
 
+@import url("nav.css");
 body {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
 }

@@ -1,3 +1,4 @@
+
 body
 {
   margin: 0;
@@ -51,6 +52,8 @@ p {
 #menuToggle a:hover
 {
   color: tomato;
+	background-color:#00A8E8;
+	
 }
 
 
@@ -139,15 +142,14 @@ p {
 #menu
 {
   position: absolute;
-  max-width: 400px;
-  width: 100vw;
+  width: 1920px;
   max-height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   box-sizing: border-box;
   overflow-y: auto;
-  background: #ededed;
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -162,6 +164,7 @@ p {
 {
   padding: 10px 0;
   font-size: 22px;
+	
 }
 
 #menu li label

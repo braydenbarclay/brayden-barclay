@@ -7,55 +7,47 @@
 </head>
 
 <body>
-	<nav role="navigation">
-  <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" id="menuCheckbox" />
-    
-    <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
+<div class="header">
+ 
+	<div><img class="nav_logo" src="img/nav_logo_white-03.png" alt=""></div>
+  <input class="hidden" id="drawer-input" type="checkbox">
+  <label for="drawer-input" class="drawer-open">
     <span></span>
-    <span></span>
-    <span></span>
-    
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-    <ul id="menu">
-      <!-- 
-      We can use a label here to close upon click (when doing same page navigation), this
-      does require a slight bit of JS.
-      -->
-      <li>
-        <a href="#">
-          <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+  </label>
+  <nav class="nav-content">
+    <ul class="items">
+      <li class="item">
+        <a href="#" target="_blank">
+          <p>001</p>
+          <p>Top</p>
         </a>
       </li>
-      <li>
-        <a href="#about">
-          <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+      <li class="item">
+        <a href="#" target="_blank">
+          <p>002</p>
+          <p>About</p>
         </a>
       </li>
-      
-      <!-- These just close the menu -->
-      <li><label for="menuCheckbox"><a>Portfolio</a></label></li>
-      <li><label for="menuCheckbox"><a href="https://braydenbarclay.com/contact">Contact</a></label></li>
-      
-      <!-- Or just use regular URLs -->
-      <li>
-        <a href="https://erikterwan.com/" target="_blank">Show me more</a>
+      <li class="item">
+        <a href="#" target="_blank">
+          <p>003</p>
+          <p>Gallery</p>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#" target="_blank">
+          <p>004</p>
+          <p>Access</p>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#" target="_blank">
+          <p>005</p>
+          <p>Contact</p>
+        </a>
       </li>
     </ul>
-  </div>
-</nav>
-    <video muted="muted" autoplay="autoplay" loop="loop" ></video>
+  </nav>
+</div>
 </body>
 </html>

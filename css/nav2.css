@@ -1,8 +1,6 @@
 body{
-  background-image:url("../img/background_test.jpg");
-  background-size: cover;
-  background-position: center; 
-  background-attachment: fixed;
+ 
+ 
 }
 
 @font-face {

@@ -1,5 +1,38 @@
 @import url("nav2.css");
+@import url("bgvideo.css");
 
 body {
 	background: rgba(10,10,10,1.00);
+
+}
+
+.aboutimg{
+	width: 500px;
+	padding:150px;
+	
+}
+.about {
+
+  width: 100%;
+  padding: 4rem 1rem;
+	z-index: -5;
+}
+.about-container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 2rem;
+	z-index: -5;
+}
+.about-block {
+  flex: 1 1 300px;
+  max-width: 600px;
+	z-index: -5;
+}
+.about-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+	z-index: -5;
 }

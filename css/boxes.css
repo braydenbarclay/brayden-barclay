@@ -1,0 +1,60 @@
+.glowing_bg {
+  color: white; /* Base text color */
+  box-shadow: 
+    0 0 5px #fff, /* Inner, brighter glow */
+    0 0 10px #fff,
+    0 0 15px #feba4f, /* Outer, colored glow */
+    0 0 20px #ff7900,
+    0 0 50px #ff0077;
+}
+
+.imgcard {
+position: relative;
+background-color: black;
+height: 300px;
+width: 300px;
+margin: 75px;
+border-radius: 25px;
+overflow: hidden;
+}
+
+
+.imgcard img {
+width: 31.5vh;
+border-radius: 25px;
+transition: opacity .2s;
+}
+
+
+.imgcard:hover img {
+opacity: 0.3;
+}
+
+
+/* Text overlay */
+.imgcard .hover-text {
+position:absolute;
+bottom: -100%;
+left: 0;
+width: 100%;
+padding-bottom: 20px;
+text-align: center;
+color: white;
+font-size: 2rem;
+font-weight: 600;
+transition: bottom .3s ease-out;
+	font-family:"AMCAP Eternal";
+}
+
+
+.imgcard:hover .hover-text {
+bottom: 20px;
+}
+
+
+.cardcontainer {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+}

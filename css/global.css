@@ -4,6 +4,7 @@
 
 .hero{
 	margin-top: 10px; 
+	margin-bottom: 10px;
 	width: 100vw; /* 100% of the viewport width */
   height: 50vh; /* 100% of the viewport height */
   object-fit: cover;

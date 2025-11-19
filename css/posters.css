@@ -2,3 +2,22 @@
 @import url("bgvideo.css");
 @import url("slider.css");
 
+.picgrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.picgrid img {
+  width: 55vh;          /* desktop size */
+  max-width: 100%;      /* prevents overflow on small screens */
+  height: auto;         /* keeps proportions */
+}
+
+/* MOBILE RESPONSIVE BREAKPOINT */
+@media (max-width: 768px) {
+  .picgrid img {
+    width: 60vw;        /* full width on phones */
+  }
+}

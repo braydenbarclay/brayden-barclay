@@ -1,6 +1,7 @@
-@import url("nav2.css");
+@import url("nav.css");
 @import url("bgvideo.css");
-@import url("slider.css");
+@import url("slider_hor.css");
+@import url("global.css");
 
 .picgrid {
   display: flex;
@@ -13,6 +14,18 @@
   width: 55vh;          /* desktop size */
   max-width: 100%;      /* prevents overflow on small screens */
   height: auto;         /* keeps proportions */
+}
+
+.horizontal{
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.horizontal img{
+	width:82.5vh;
+
 }
 
 /* MOBILE RESPONSIVE BREAKPOINT */

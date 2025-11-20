@@ -1,7 +1,13 @@
 @view-transition {
   navigation: auto;
 }
-
+* img {
+	pointer-events: none;
+  -webkit-touch-callout: none;
+}
+body{
+	color: white;
+}
 .hero{
 	margin-top: 50px; 
 	margin-bottom: 50px;
@@ -9,4 +15,40 @@
   height: 50vh; /* 100% of the viewport height */
   object-fit: cover;
 }
+.header_text{
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 25px;
+}
 
+.traditional_text{
+	margin-top:100px;
+}
+
+.footer{
+	background-color: black;
+	margin-bottom: 100px;
+	padding-top: 5vh;
+	display: inline-block;
+	justify-content: center;
+	width: 165vh;
+	margin-left:18.2vh;
+	
+}
+
+.footer p {
+	
+margin-left: 50vh;
+	margin-right: 50vh;
+	padding-bottom: 5vh;
+}
+
+/* Mobile responsiveness for screens 425px and below */
+@media screen and (max-width: 768px) {
+    .header_text {
+        font-size: 1.8rem; /* smaller font size for mobile */
+        margin-bottom: 15px; /* adjust spacing for mobile */
+        text-align: center; /* optional, ensures text stays centered */
+    }
+}

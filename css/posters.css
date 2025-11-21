@@ -29,7 +29,7 @@
 }
 
 /* MOBILE RESPONSIVE BREAKPOINT */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .picgrid img {
     width: 60vw;        /* full width on phones */
   }

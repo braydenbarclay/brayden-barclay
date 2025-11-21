@@ -98,42 +98,45 @@ nav {
 }
 
 
-@media (max-width: 768px) {
+/* -------------------------------------------------- */
+/*                  MOBILE VERSION                    */
+/* -------------------------------------------------- */
+
+@media (max-width: 500px) {
 
   header {
-	  width: 425px;
-    margin: 10px;
-    justify-content: center;
-    
+    height: 70px;
+    border-radius: 30px;
+    width: calc(100vw - 10px);
+    margin: 5px;
+   
   }
 
   .logo {
-    margin-left: 0px;
-	  width: 75px;
+    width: .1px;
+    margin-left: .1px;
+	  opacity: 0;
   }
 
-  /* Convert nav into a dropdown menu */
+  nav {
+    flex: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .nav_links {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(8px);
-    padding: 25px 0;
-    gap: 20px;
-    border-radius: 0 0 25px 25px;
-    display: none; /* hidden by default */
+    gap: .1px;            /* MUCH smaller spacing for mobile */
   }
 
-
-
-  .nav_links li {
-    padding: 10px;
+  li a {
+    font-size: 12px;      /* Fits comfortably on 500px screens */
+    font-weight: 500;
   }
 
   button {
-  
+    height: 40px;
+    width: 75px;
+    margin-right: 10px;
+    font-size: 12px;
   }
 }

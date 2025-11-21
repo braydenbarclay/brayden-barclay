@@ -370,3 +370,9 @@ a.jx-knightlab:focus span.juxtapose-name {
   color: #000;
   border: none;
 }
+
+@media (max-width: 768px) {
+  .juxtapose img {
+    width: 1000px;        /* full width on phones */
+  }
+}

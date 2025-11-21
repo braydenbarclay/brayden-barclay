@@ -8,8 +8,7 @@
 body{
 	color: white;
 }
-.hero{
-	margin-top: 50px; 
+.hero{ 
 	margin-bottom: 50px;
 	width: 100vw; /* 100% of the viewport width */
   height: 50vh; /* 100% of the viewport height */
@@ -45,7 +44,7 @@ margin-left: 50vh;
 }
 
 /* Mobile responsiveness for screens 425px and below */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     .header_text {
         font-size: 1.8rem; /* smaller font size for mobile */
         margin-bottom: 15px; /* adjust spacing for mobile */

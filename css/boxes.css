@@ -2,10 +2,10 @@
   color: white; /* Base text color */
   box-shadow: 
     0 0 5px #fff, /* Inner, brighter glow */
-    0 0 10px #fff,
-    0 0 15px #feba4f, /* Outer, colored glow */
-    0 0 20px #ff7900,
-    0 0 50px #ff0077;
+    0 0 10px #CDC5EA,
+    0 0 15px #CDC5EA, /* Outer, colored glow */
+    0 0 20px #9678EB,
+    0 0 50px #6317EB;
 }
 
 .imgcard {
@@ -13,16 +13,18 @@ position: relative;
 background-color: black;
 height: 300px;
 width: 300px;
-margin: 75px;
+margin: 50px;
 border-radius: 25px;
 overflow: hidden;
 }
 
 
 .imgcard img {
-width: 31.5vh;
-border-radius: 25px;
-transition: opacity .2s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* prevents stretching */
+  border-radius: 25px;
+  transition: opacity .2s;
 }
 
 
@@ -43,7 +45,7 @@ color: white;
 font-size: 2rem;
 font-weight: 600;
 transition: bottom .3s ease-out;
-	font-family:"AMCAP Eternal";
+	font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 }
 
 
@@ -64,6 +66,7 @@ justify-content: center;
 /*      MOBILE RESPONSIVE        */
 /* ----------------------------- */
 @media (max-width: 425px) {
+	
   .imgcard {
     height: 250px;
     width: 250px;

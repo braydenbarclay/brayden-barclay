@@ -31,6 +31,6 @@
 /* MOBILE RESPONSIVE BREAKPOINT */
 @media (max-width: 500px) {
   .picgrid img {
-    width: 60vw;        /* full width on phones */
+    width: 80vw;        /* full width on phones */
   }
 }

@@ -58,14 +58,23 @@ align-self: start;
 }
 
 
-/* Mobile adjustments */
 @media (max-width: 600px) {
-.about-block img {
-border-radius: 0.75rem;
+
+	.about-block img {
+    width: 80%;          /* makes it smaller */
+    max-width: 400px;    /* prevents it from getting too big */
+    display: block;
+    margin: 0 auto 1rem auto; /* centers it */
+    border-radius: 0.75rem;
+  }
+
 }
 
+  .about-block p {
+    font-size: 0.95rem;
+    padding: 0 1.5rem 1.5rem;   /* adds left & right spacing */
+  }
 
-.about-block p {
-font-size: 0.95rem;
-}
-}
+  .about-block h1 {
+    padding: 0 1.5rem;
+  }

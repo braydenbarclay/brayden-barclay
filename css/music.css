@@ -1,0 +1,128 @@
+@import url("nav.css");
+@import url("bgvideo.css");
+@import url("slider.css");
+@import url("global.css");
+
+.picgrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.picgrid img {
+  width: 55vh;          /* desktop size */
+  max-width: 100%;      /* prevents overflow on small screens */
+  height: auto;         /* keeps proportions */
+}
+
+.horizontal{
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.horizontal img{
+	width:82.5vh;
+
+}
+
+.subhead {
+
+	display: flex;
+	align-content: center;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.subhead img{
+	width:30%;
+	height:100%;
+
+}
+
+.subtext {
+	margin-top:25px;
+}
+
+.cardcontainer {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+	margin-top:100px;
+}
+
+.imgcard {
+    display: block;
+    position: relative;   /* IMPORTANT */
+    overflow: hidden;     /* Keeps text inside square */
+}
+
+.imgcard img {
+    display: block;
+    transition: opacity .3s ease;
+}
+
+.imgcard:hover img {
+    opacity: 0.5;
+}
+
+/* Text overlay */
+.imgcard .hover-text {
+    position: absolute;
+    bottom: -100%;       /* start hidden */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    transition: bottom .3s ease-out;
+}
+
+/* Text overlay */
+.imgcard .hover-text-head {
+    position: absolute;
+    bottom: -100%;       /* start hidden */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+	  font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    transition: bottom .3s ease-out;
+}
+
+/* Text overlay */
+.imgcard .hover-text-worthless {
+    position: absolute;
+    bottom: -100%;       /* start hidden */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    transition: bottom .3s ease-out;
+}
+.imgcard:hover .hover-text {
+    bottom: 60px;        /* slide up inside */
+}
+.imgcard:hover .hover-text-head {
+    bottom: 15px;        /* slide up inside */
+}
+
+.imgcard:hover .hover-text-worthless {
+    bottom: 90px;        /* slide up inside */
+}
+/* MOBILE RESPONSIVE BREAKPOINT */
+@media (max-width: 500px) {
+  .picgrid img {
+    width: 70vw;        /* full width on phones */
+  }
+}

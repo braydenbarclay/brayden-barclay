@@ -14,20 +14,66 @@
       <ul class="nav_links">
         <li><a href="index.html">Home</a></li>
 		<li><a href="projects.html">Projects</a></li>
-        <li><a href="photography.html">Photography</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
     <a class="cta" href="contact.html"><button>Contact</button></a>
   </header>
 	
+<body>
+    <div class="form-container" id="formContainer">
+        <h1>Contact</h1>
+        <form id="profileForm" action="https://formspree.io/f/mzdanzwn" method="post">
+            <div class="form-group">
+                <label for="name">
+                    Name
+                    <span class="typing-indicator" id="nameTyping">Typing...</span>
+                </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">
+                    Email
+                    <span class="typing-indicator" id="emailTyping">Typing...</span>
+                </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="bio">
+                    Tell me about your idea
+                    <span class="typing-indicator" id="bioTyping">Typing...</span>
+                </label>
+                <textarea id="bio" name="bio" placeholder="Explain into further detail..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                <span class="spinner"></span>
+                <span class="btn-text">Submit</span>
+            </button>
+
+            <div class="status-message" id="statusMessage"></div>
+        </form>
+    </div>
+
+</body>
+	
+	<script src="js/contact.js"></script>
+<!-- </html> -->
+	
 	<div class="video-background">
   <div class="video-foreground">
 
 
-		<div style="padding:56.25% 0 0 0;position:relative;">
-			<iframe src="https://player.vimeo.com/video/1132661066?background=1" frameborder="0" allow="autoplay;" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="background_ani"></iframe>
-	  </div>  
+		<div class="video-background">
+  <iframe 
+    src="https://player.vimeo.com/video/1132661066?background=1"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    title="final final animation">
+  </iframe>
+</div>  
 	  
   </div>
 </div>

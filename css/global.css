@@ -18,35 +18,34 @@ body{
 	font-size: 3rem;
 	display: flex;
 	justify-content: center;
+	margin-top: 25px;
 	margin-bottom: 25px;
+	font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 }
 
 .traditional_text{
 	margin-top:100px;
 }
 
-.footer{
-	background-color: black;
-	margin-bottom: 100px;
-	padding-top: 5vh;
-	display: inline-block;
-	justify-content: center;
-	width: 165vh;
-	margin-left:18.2vh;
-	
+.footer {
+    background-color: black;
+    padding: 5vh 5vw;   /* vertical + horizontal padding */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer p {
-	
-margin-left: 50vh;
-	margin-right: 50vh;
-	padding-bottom: 5vh;
+    max-width: 800px;   /* keeps text readable on large screens */
+    margin: 0 auto;     /* centers it */
+    padding-bottom: 5vh;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 }
 
 /* Mobile responsiveness for screens 425px and below */
 @media screen and (max-width: 500px) {
     .header_text {
-        font-size: 1.8rem; /* smaller font size for mobile */
+        font-size: 1rem; /* smaller font size for mobile */
+		margin-top: 15px;
         margin-bottom: 15px; /* adjust spacing for mobile */
         text-align: center; /* optional, ensures text stays centered */
     }

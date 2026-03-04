@@ -11,8 +11,62 @@
 }
 
 .picgrid img {
-  width: 55vh;          /* desktop size */
-  max-width: 100%;      /* prevents overflow on small screens */
+  width: 80vh;          /* desktop size */
+  max-width: 90%;      /* prevents overflow on small screens */
+  height: auto;         /* keeps proportions */
+		margin-top: 200px;
+	margin-bottom: 150px;
+}
+
+.picgrid-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.picgrid-grid img {
+  width: 41vh;          /* desktop size */
+  max-width: 40%;      /* prevents overflow on small screens */
+  height: auto;         /* keeps proportions */
+}
+
+.picgrid-whale {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.picgrid-whale img {
+  width: 80vh;          /* desktop size */
+  max-width: 40%;      /* prevents overflow on small screens */
+  height: auto;         /* keeps proportions */
+}
+
+.picgrid-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.picgrid-card img {
+  width: 40vh;          /* desktop size */
+  max-width: 40%;      /* prevents overflow on small screens */
+  height: auto;         /* keeps proportions */
+}
+
+.picgrid-billboard {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.picgrid-billboard img {
+  width: 160vh;          /* desktop size */
+  max-width: 80%;      /* prevents overflow on small screens */
   height: auto;         /* keeps proportions */
 }
 
@@ -38,7 +92,7 @@
 }
 
 .subhead img{
-	width: 30%;
+	width: 80%;
 	height:100%;
 
 }
@@ -124,6 +178,6 @@ justify-content: center;
 /* MOBILE RESPONSIVE BREAKPOINT */
 @media (max-width: 500px) {
   .picgrid img {
-    width: 80vw;        /* full width on phones */
+    width: 50vw;        /* full width on phones */
   }
 }

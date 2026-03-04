@@ -12,7 +12,7 @@
 
 .picgrid img {
   width: 55vh;          /* desktop size */
-  max-width: 100%;      /* prevents overflow on small screens */
+  max-width: 40%;      /* prevents overflow on small screens */
   height: auto;         /* keeps proportions */
 }
 
